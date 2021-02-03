@@ -22,7 +22,7 @@ class AccountsController < ApplicationController
   # POST /accounts or /accounts.json
   def create
     @account = Account.new(account_params)
-
+    
     respond_to do |format|
       if @account.save
         format.html { redirect_to @account, notice: "Account was successfully created." }
