@@ -32,8 +32,12 @@
         <td><%= user.dob %></td>
         <td><%= user.aadhar_no %></td>
         <td><%= user.pan_no %></td>
-        <td><%= user.photo %></td>
-        <td><%= user.sign %></td>
+        <td><div class="image">
+        <%= image_tag( user.photo, :size => "30x20", :crop => :fill) %>
+        </div></td>
+        <td><div class="image">
+        <%= image_tag( user.sign, :size => "30x20", :crop => :fill) %>
+        </div></td>
         <td><%= user.cos_id %></td>
         <td><%= user.phno %></td>
         <td><%= user.adress %></td>
